@@ -80,13 +80,12 @@ body {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 2fr 1fr; /* texto / skills */
+  grid-template-columns: 2fr 1fr;
   gap: 3rem;
 
-  align-items: start; /* 🔑 SIEMPRE ARRIBA */
+  align-items: start;
 }
 
-/* Skills */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +107,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
