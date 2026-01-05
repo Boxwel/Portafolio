@@ -112,3 +112,232 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Estilos para la tarjeta de contacto */
+.contact-card-wrapper {
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 400px;
+}
+
+.contact-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.contact-card-body {
+  padding: 1rem;
+}
+
+.contact-card-title {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Estilos para la sección de proyectos */
+#projects {
+  background: linear-gradient(135deg, rgba(18, 18, 18, 0.95) 0%, rgba(30, 30, 30, 0.95) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projects-header {
+  margin-bottom: 3rem;
+}
+
+.projects-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.projects-icon {
+  color: #ffc107;
+}
+
+.projects-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Estilos para las tarjetas de proyectos */
+.project-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+  height: 200px;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.project-image-2 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.project-image-3 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.project-image i {
+  font-size: 4rem;
+  color: white;
+}
+
+.project-content {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0 0 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-content {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-name {
+  color: white;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.project-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.badge-1 {
+  background-color: #ffc107;
+  color: black;
+}
+
+.badge-2 {
+  background-color: #0dcaf0;
+  color: black;
+}
+
+.badge-3 {
+  background-color: #198754;
+  color: white;
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(13, 110, 253, 0.2);
+  color: #6ea8fe;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(13, 110, 253, 0.3);
+}
+
+.project-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.github-btn {
+  transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 193, 7, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-card-wrapper {
+    width: 100%;
+    position: relative;
+    transform: none;
+    margin-top: 2rem;
+  }
+  
+  .card-bg {
+    width: 90% !important;
+  }
+  
+  .projects-title {
+    font-size: 2rem;
+  }
+  
+  .projects-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+}
